@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 
 //Item이 유일한 클래스. 테이블 스키마를 변경할때마다 버전이 올라간다. 스키마 버전 기록 백업을 유지하지 않도록 exportSchema false.
-@Database(entities = [Item::class], version = 1, exportSchema = false)
+@Database(entities = [Item::class], version = 2, exportSchema = false)
 abstract class InventoryDatabase : RoomDatabase() {
 
     abstract fun itemDao(): ItemDao
